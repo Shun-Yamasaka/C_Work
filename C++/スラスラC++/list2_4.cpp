@@ -14,10 +14,11 @@ int main(){
     /*----------*/
     /* 数値入力 */
     /*----------*/
-    // キー入力をheightに格納する
-    cout << "input height(m):";
+    // キー入力をheightに格納する（身長）
+    cout << "input height(cm):";
     cin >> height;
-    // キー入力をweightに格納する
+    height /= height; // cm単位からm単位に変換
+    // キー入力をweightに格納する（体重）
     cout << "input weight(kg):";
     cin >> weight;
 
